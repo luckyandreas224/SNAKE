@@ -1,12 +1,15 @@
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
+#include <time.h>
+
 
 int main(){
 	int sizeR=20,sizeC=40,xPos=15,yPos=15;
 	char map[sizeR][sizeC];
 	int length=1;
 	int xFruit,yFruit;
+	 srand(time(NULL));
 	xFruit = rand()%(sizeC-2)+1;
 	yFruit = rand()%(sizeR-2)+1;
 	int snakeX[100], snakeY[100];
@@ -72,15 +75,6 @@ int main(){
 	}
 		map[yFruit][xFruit]='x';
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	return 0;
